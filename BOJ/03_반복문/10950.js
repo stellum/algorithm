@@ -3,12 +3,10 @@ const path = require("path");
 const input = require("fs")
   .readFileSync(path.resolve(__dirname, "../input.txt"))
   .toString()
-  .trim()
   .split("\n");
 
-console.log(input[1]);
-let
-
-for (let i = 1; i < 10; i++) {
-  console.log(i);
+// A + B
+for (let i = 1; i <= input[0]; i++) {
+  let numbers = input[i].split(" ");
+  console.log(Number(numbers[0]) + Number(numbers[1]));
 }
